@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paysaa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300">
+    <header>
+        <h1 class="font-semibold text-center text-5xl w-9/12 mx-auto mt-20">Let's Get Unlimited <span class="font-bold text-red-400">Moneeeeeeey</span>!!! </h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 w-9/12 mx-auto mt-14">
+            <div class="bg-green-400 w-9/12 mx-auto rounded-xl p-4">
+                <h1 id="deposit-title" class="text-black font-medium text-2xl mb-4">Deposit</h1>
+                <h1 id="deposit-blance" class="text-5xl text-black">$<span id="deposit-blance-amount">00</span></h1>
+
+            </div>
+            <div class="bg-yellow-600  w-9/12 mx-auto rounded-xl p-4">
+                <h1 id="withdraw-title" class="text-black font-medium text-2xl mb-4">Withdraw</h1>
+                <h1 class="text-5xl text-black">$<span id="withdraw-blance">00</span></h1>
+
+            </div>
+            <div class="bg-purple-400 w-9/12 mx-auto rounded-xl p-4">
+                <h1 class="text-black font-medium text-2xl mb-4" id="total-blance-title">Blance</h1>
+                <h1 class="text-5xl text-black">$<span id="total-blance">1200</span></h1>
+            </div>
+        </section>
+
+        <!-- second section -->
+
+        <section class="grid grid-cols-2 w-9/12 mx-auto mt-14 mb-20 gap-4">
+            <div class="bg-green-300 p-8 rounded-xl">
+                <h1 class="text-4xl font-semibold mb-4" id="input-deposit-title">Place Deposit</h1>
+                <input class=" ml-10 w-9/12 block mb-4 p-1 rounded-md" type="text" name="" id="input-deposit" placeholder="amount you want to deposit">
+
+                <button id="btn-deposit" class="bg-red-200 ml-10 px-8 py-2 text-2xl font-semibold rounded-xl hover:bg-red-300">Submit</button>
+            </div>
+            <div class="bg-yellow-600 p-8 rounded-xl">
+                <h1 id="input-withdraw-title" class="text-4xl font-semibold mb-4">Place Withdraw</h1>
+                    <input class="ml-10 w-9/12 block mb-4 p-1 rounded-md" type="text" name="" id="input-withdraw" placeholder="amount you want to Withdraw">
+                <button id="btn-withdraw" class="bg-red-200 ml-10 px-8 py-2 text-2xl font-semibold rounded-xl hover:bg-red-300">Submit</button>
+            </div>
+        </section>
+    </main>
+    <script src="calcult.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
